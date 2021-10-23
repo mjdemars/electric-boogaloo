@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap" rel="stylesheet">
     
     <script src="sidenav.js"></script>
+    <script src="save.js"></script>
 </head>
 
 <body>
@@ -28,43 +29,44 @@
 
     <div id="sidebar" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="tiers.html">Tiers</a>
+        <a href="tiers.html">Rewards</a>
         <a href="#">Members</a>
         <a href="#">Promotions</a>
     </div>
 
     <div class="content" id="content">
         <h2 style="padding-top: 1.5em; padding-bottom: 1.0em; font-size: 3em">Welcome</h2>
-        <h2 style="font-size: 1.5em; padding-bottom: 1.0em;">Company Name Here</h2>
+        <h2 style="font-size: 1.8em; padding-bottom: 1.0em;">Mom and Pop's Chocolate Shop</h2>
 
         <table>
             <tr>
-                <td>Product</td>
-                <td>Points</td>
+                <td>Dark Chocolate Bar</td>
+                <td><input type="text" placeholder="Points"></td>
             </tr>
             <tr>
-                <td>Product</td>
-                <td>Points</td>
+                <td>Milk Chocolate Bar</td>
+                <td><input type="text" placeholder="Points"></td>
             </tr>
             <tr>
-                <td>Product</td>
-                <td>Points</td>
+                <td>Truffle Box</td>
+                <td><input type="text" placeholder="Points"></td>
             </tr>
             <tr>
-                <td>Product</td>
-                <td>Points</td>
+                <td>Surprise Box</td>
+                <td><input type="text" placeholder="Points"></td>
             </tr>
             <tr>
-                <td>Product</td>
-                <td>Points</td>
+                <td>Hot Chocolate</td>
+                <td><input type="text" placeholder="Points"></td>
             </tr>
             <tr>
-                <td>Product</td>
-                <td>Points</td>
+                <td>Coffee</td>
+                <td><input type="text" placeholder="Points"></td>
             </tr>
         </table>
 
-        <button class="blob-btn">
+        <div class="popup">
+        <button class="blob-btn" onclick="showAlert()">
             S a v e
             <span class="blob-btn__inner">
             <span class="blob-btn__blobs">
@@ -74,7 +76,9 @@
                 <span class="blob-btn__blob"></span>
             </span>
             </span>
+            <span class="popuptext" id="myPopup">Changes saved</span>
         </button>
+        </div>
     </div>
 </body>
 
